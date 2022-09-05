@@ -1,0 +1,44 @@
+{
+  "name": "fullstacktouristsystem",
+  "version": "1.0.0",
+  "description": "Full-Stack System for the Society for the Protection of Nature - An assignment given during NodeJS training for work",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "compile": "tsc",
+    "serve": "nodemon src/index.ts "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanwright1988/FullStackTouristSystem.git"
+  },
+  "keywords": [
+    "fullstack",
+    "node",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "Stefan Wright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefanwright1988/FullStackTouristSystem/issues"
+  },
+  "homepage": "https://github.com/stefanwright1988/FullStackTouristSystem#readme",
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^18.7.14",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "^8.23.0",
+    "fastify": "^4.5.3",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "@keplr/typed-ajv": "^3.0.5",
+    "ajv-keywords": "^5.1.0",
+    "dotenv": "^16.0.2"
+  }
+}
