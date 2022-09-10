@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "attractionName": "Stefan2",
+        "attractionArea": "sfk",
+        "attractionDescription": "This is a test too",
+        "attractionCost": {
+            "adult": 10,
+            "child": 5
+        }
+    },
+    {
+        "id": 2,
+        "attractionName": "Stefan2",
+        "attractionArea": "sfk",
+        "attractionDescription": "This is a test too",
+        "attractionCost": {
+            "adult": 10,
+            "child": 5
+        }
+    },
+    {
+        "id": 4,
+        "attractionName": "Stefan1",
+        "attractionArea": "sfk",
+        "attractionDescription": "This is a test",
+        "attractionCost": {
+            "adult": 10,
+            "child": 5
+        }
+    },
+    {
+        "id": 5,
+        "attractionName": "Stefan1",
+        "attractionArea": "sfk",
+        "attractionDescription": "This is a test",
+        "attractionCost": {
+            "adult": 10,
+            "child": 5
+        }
+    },
+    {
+        "id": 6,
+        "attractionName": "Stefan1",
+        "attractionArea": "sfk",
+        "attractionDescription": "This is a test",
+        "attractionCost": {
+            "adult": 10,
+            "child": 5
+        }
+    },
+    {
+        "id": 1,
+        "attractionName": "Stefan1",
+        "attractionArea": "sfk",
+        "attractionDescription": "This is a test",
+        "attractionCost": {
+            "adult": 10,
+            "child": 5
+        }
+    },
+    {
+        "id": 1,
+        "attractionName": "Stefan1",
+        "attractionArea": "sfk",
+        "attractionDescription": "This is a test",
+        "attractionCost": {
+            "adult": 10,
+            "child": 5
+        }
+    },
+    {
+        "id": 1,
+        "attractionName": "Stefan1",
+        "attractionArea": "sfk",
+        "attractionDescription": "This is a test",
+        "attractionCost": {
+            "adult": 10,
+            "child": 5
+        }
+    },
+    {
+        "id": 1,
+        "attractionName": "Stefan1",
+        "attractionArea": "sfk",
+        "attractionDescription": "This is a test",
+        "attractionCost": {
+            "adult": 10,
+            "child": 5
+        }
+    },
+    {
+        "id": 7,
+        "attractionName": "Stefan1",
+        "attractionArea": "sfk",
+        "attractionDescription": "This is a test",
+        "attractionCost": {
+            "adult": 10,
+            "child": 5
+        }
+    },
+    {
+        "id": 8,
+        "attractionName": "Stefan1",
+        "attractionArea": "sfk",
+        "attractionDescription": "This is a test",
+        "attractionCost": {
+            "adult": 10,
+            "child": 5
+        }
+    }
+]

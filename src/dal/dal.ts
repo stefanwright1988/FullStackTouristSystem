@@ -1,11 +1,11 @@
 import { readFile } from "fs";
 import { writeFile } from "fs/promises";
-import { TAreaBase } from "../areas/areas.interface";
-import { TAttraction, TAttractionBase, TAttractionID } from "../attractions/attractions.interface";
+import { TArea, TFullArea } from "../interfaces/areas.interface";
+import { TAttraction, TAttractionId} from "../interfaces/attractions.interface";
 
 //Return area list
 const getAreaList = () => {
-    return new Promise((resolve, reject) => {
+    return new Promise<TArea[]>((resolve, reject) => {
         readFile(process.env.AREASLOCATION || "", "utf-8", (err: any, fileContent: string) => {
             if (err) return reject(err);
             const areas = JSON.parse(fileContent)
@@ -15,12 +15,12 @@ const getAreaList = () => {
 }
 
 const getAreaFull = (shortArea: string) => {
-    return new Promise<string>((resolve, reject) => {
+    return new Promise<TArea>((resolve, reject) => {
         readFile(process.env.AREASLOCATION || "", "utf-8", (err: any, fileContent: string) => {
             if (err) return reject(err);
             const areas = JSON.parse(fileContent)
-            const findArea = areas.find((area: TAreaBase) => area.shortName == shortArea);
-            resolve(findArea.fullName)
+            const findArea = areas.find((area:TArea) => area.shortName == shortArea);
+            resolve(findArea)
         })
     })
 }
@@ -40,11 +40,13 @@ const getAttractionByAreaShortcode = (areaCode: string) => {
 
 //Get attraction count
 const getAttractionIds = () => {
-    return new Promise<Array<number>>((resolve, reject) => {
+    return new Promise<TAttractionId[]>((resolve, reject) => {
         readFile(process.env.ATTRACTIONSLOCATION || "", "utf-8", (err: any, fileContent: string) => {
             if (err) return reject(err);
             const attractions = JSON.parse(fileContent);
-            const ids = attractions.map((i:TAttractionID ) => i.id)
+            const ids = attractions.map((i:TAttractionId) => (
+                {id : i.id})
+                )
             resolve(ids)
         })
     })

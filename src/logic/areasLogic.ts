@@ -1,11 +1,12 @@
 import * as dal from "../dal/dal";
 
 const getAreaList = async () => {
-    return await dal.getAreaList();
+    const areaList = await dal.getAreaList();
+    return areaList;
 }
 
 const getAreaName = async (shortArea:string) => {
-    await dal.getAreaFull(shortArea);
+    return await dal.getAreaFull(shortArea);
 }
 
 

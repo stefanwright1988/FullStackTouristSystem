@@ -5,12 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Attach to Process",
             "type": "node",
-            "runtimeVersion": "16.17.0",
-            "request": "launch",
-            "name": "Launch debug instance for TS-Node",
-            "runtimeArgs": ["-r","ts-node/register"],
-            "program": "${workspaceFolder}/src/index.ts",
-        }
+            "request": "attach",
+            "restart": true,
+            "port": 7002,
+            "outFiles": [],
+            "sourceMaps": true
+        },
     ]
 }

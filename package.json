@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "compile": "tsc",
-    "serve": "nodemon src/index.ts "
+    "serve": "nodemon src/index.ts ",
+    "watch:debug": "nodemon --inspect=7002 -e ts,tsx --exec node -r ts-node/register ./src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,8 @@
     "typescript": "^4.8.2"
   },
   "dependencies": {
+    "@fastify/swagger": "^7.5.1",
+    "@fastify/type-provider-typebox": "^2.3.0",
     "@keplr/typed-ajv": "^3.0.5",
     "ajv-keywords": "^5.1.0",
     "dotenv": "^16.0.2"
