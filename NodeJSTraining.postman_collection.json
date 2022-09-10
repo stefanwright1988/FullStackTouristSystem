@@ -72,6 +72,35 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "DeleteAttraction",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"attractionName\": \"Stefan1\",\n    \"attractionArea\": \"sfk\",\n    \"attractionDescription\": \"This is a test\",\n    \"attractionCost\": {\n        \"adult\": 10,\n        \"child\": 5\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7001/attractions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"attractions",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
